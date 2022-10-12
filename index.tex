@@ -1,0 +1,102 @@
+\documentclass[10pt,twoside,twocolumn,openany,nodeprecatedcode,a4paper,bg=none]{dndbook}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\MakeShortVerb{|}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+\title{Loose rocks}
+
+\begin{document}
+\section{Loose rocks}
+\subsection{The adventure}
+The characters are members of the Adventurers Guild of Snowmelt. Snowmelt is a
+small town at the foot of The Whites mountain range. Life is good here. Lots of
+farming, and a decent amount of trade. One day, while the characters are on
+their way to the Adventurers Guild, a rider and their horse come running into
+town. They have definitely seen better days. The riders' clothes are torn to
+shreds, and the horse is on the verge of death.
+
+\begin{DndReadAloud}
+  As their horse collapses under them, the rider stumbles to you. They speak of
+  a goblin attack on their caravan. They are the only survivor, especially now
+  that the horse is also dead. As you bring the survivor inside, they are asked
+  to investigate the goblin attack. Goblins do live nearby, but they've never
+  dared to attack a trade caravan before. What happened?
+
+  As you make their way along the trade route looking for the site of the
+  attack, you see some broken carts and a lot of rubble in the distance. As you
+  make your way there, you hear some bickering in Goblin. Eventually, one of 
+  the goblins steps forward and introduces the band of goblins you.
+
+  The goblin introduces himself as Nubbs, the leader of this rag-tag band of
+  goblins named Nubbs' Nubbins. 
+\end{DndReadAloud}
+
+At this point, ask the players for a DC10 insight check. Those succeeding this
+check notice that not all goblins seem to agree with this name.
+
+\begin{DndReadAloud}
+  Nubbs asks you to help them. You see, their house in the mountains has been
+  attacked. Somehow they've been attacked. Now, you all look like strong
+  adventurers, won't you help us little old goblins out?
+\end{DndReadAloud}
+
+When confronted about the attack, Nubbs will deny at first. When pressed, he'll
+admit to it. But he's adamant that it was necessary for their survival. After
+all, they've been forced out of their home.
+
+If the players agree to help Nubbs, he'll lead them to their home. 
+If they players decide to attack the goblins, run combat as normal. Afterwards,
+when they report back to the Adventurers Guild, the Guildmaster will ask them
+to investigate. He'll also give them directions to where the goblins' house is.
+
+Once there, the door will refuse to let the players in. It's reason? They're
+not goblins, so they don't belong here. This is an old magical door, and there
+are no other entrances as far as the players can see.
+\textbf{TODO: \textit{Insert a creative puzzle here}}
+
+Once inside, either the goblins lead the players to the mining tunnel they 
+recently opened, or a trail of goblinblood will lead the players there. Next
+to the entrance, there is still a big warning sign in Common and Dwarvish. This
+warning sign will be spotted by the players. The sign says \textit{WARNING: 
+Moving ground, keep out}. One of the goblins has seen it, but doesn't want to
+admit it, afraid that others will blame him for all of this. The tunnel used to
+be boarded up, but the boards have been removed and lay next to the entrance.
+
+Once the players are inside, the ground will suddenly turn to difficult
+terrain, and a deep rumble can be heard throughout the tunnel. With a DC18
+perception check the players can spot where the sound is coming from. Those
+who fail this check, including the Stone Elemental, are surprised for the first
+round of combat.
+
+Roll for initiative for the final combat with the Stone Elemental. 
+
+\subsection{Monsters and NPCs}
+In this adventure there are two monsters, and a few NPCs. The goblins should be
+treated as possible monsters, but more likely they'll be seen as NPCs by the
+players.
+
+\subsubsection{Monsters}
+This one-shot has a few goblins (3 to 6, depending on the amount of players)
+that should have a distinct personality. Pick one or roll on the personality
+table below.
+
+\input{personality_table.tex}
+
+\input{stone_elemental.tex}
+\input{goblin.tex}
+\end{document}
