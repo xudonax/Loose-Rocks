@@ -1,54 +1,54 @@
-\begin{DndMonster}{Goblin}
-      \DndMonsterType{Small humanoid (goblinoid), neutral evil}
-  
-      % If you want to use commas in the key values, enclose the values in braces.
-      \DndMonsterBasics[
-          armor-class = {15 (Leather Armor, Shield)},
-          hit-points  = {7 \DndDice{2d6}},
-          speed       = {30 ft.},
-        ]
-  
-      \DndMonsterAbilityScores[
-          str = 8,
-          dex = 14,
-          con = 10,
-          int = 10,
-          wis = 8,
-          cha = 8,
-        ]
-  
-      \DndMonsterDetails[
-          skills = {Stealth +6},
-          senses = {Darkvision 60 Ft., passive Perception 9},
-          languages = {Common, Goblin},
-          challenge = 1/4,
-        ]
-      % Traits
-      \DndMonsterAction{Nimble Escape}
-      The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
-      
-      \DndMonsterSection{Actions}
-  
-      \DndMonsterAttack[
-        name=Scimitar,
-        distance=melee,
-        type=weapon,
-        mod=+4,
-        reach=5,
-        targets=one target,
-        dmg=\DndDice{1d6+2},
-        dmg-type=slashing,
-      ]
-  
-      \DndMonsterAttack[
-        name=Shortbow,
-        distance=ranged,
-        range=80/320,
-        type=weapon,
-        mod=+4,
-        reach=5,
-        targets=one target,
-        dmg=\DndDice{1d6+2},
-        dmg-type=piercing,
-      ]
-  \end{DndMonster}
+\begin{DndMonster}[float=!b]{Goblin}
+  \DndMonsterType{Small humanoid (goblinoid), neutral evil}
+
+  % If you want to use commas in the key values, enclose the values in braces.
+  \DndMonsterBasics[
+    armor-class = {15 (Leather Armor, Shield)},
+    hit-points  = {7 \DndDice{2d6}},
+    speed       = {30 ft.},
+  ]
+
+  \DndMonsterAbilityScores[
+    str = 8,
+    dex = 14,
+    con = 10,
+    int = 10,
+    wis = 8,
+    cha = 8,
+  ]
+
+  \DndMonsterDetails[
+    skills = {Stealth +6},
+    senses = {Darkvision 60 Ft., passive Perception 9},
+    languages = {Common, Goblin},
+    challenge = 1/4,
+  ]
+  % Traits
+  \DndMonsterAction{Nimble Escape}
+  The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
+
+  \DndMonsterSection{Actions}
+
+  \DndMonsterAttack[
+    name=Scimitar,
+    distance=melee,
+    type=weapon,
+    mod=+4,
+    reach=5,
+    targets=one target,
+    dmg=\DndDice{1d6+2},
+    dmg-type=slashing,
+  ]
+
+  \DndMonsterAttack[
+    name=Shortbow,
+    distance=ranged,
+    range=80/320,
+    type=weapon,
+    mod=+4,
+    reach=5,
+    targets=one target,
+    dmg=\DndDice{1d6+2},
+    dmg-type=piercing,
+  ]
+\end{DndMonster}

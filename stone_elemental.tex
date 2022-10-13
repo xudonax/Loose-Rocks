@@ -1,56 +1,58 @@
-\begin{DndMonster}{Stone Elemental}
-      \DndMonsterType{Large elemental, unaligned}
-  
-      % If you want to use commas in the key values, enclose the values in braces.
-      \DndMonsterBasics[
-          armor-class = {16 (Natural Armor)},
-          hit-points  = {81 \DndDice{12d10 + 15}},
-          speed       = {20 ft., burrow 30 ft.},
-        ]
-  
-      \DndMonsterAbilityScores[
-          str = 18,
-          dex = 7,
-          con = 17,
-          int = 5,
-          wis = 6,
-          cha = 4,
-        ]
-  
-      \DndMonsterDetails[
-          skills = {Stealth +0},
-          senses = {darkvision 60 Ft., tremorsense 60 Ft., passive Perception 8},
-          languages = {---},
-          challenge = 3,
-        ]
-      % Traits
-      \DndMonsterAction{Earth Glide}
-      The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
-      
-      \DndMonsterSection{Actions}
-      \DndMonsterAction{Multiattack}
-      The elemental makes two slam attacks.
-  
-      \DndMonsterAttack[
-        name=Slam,
-        distance=melee,
-        type=weapon,
-        mod=+4,
-        reach=10,
-        targets=one target,
-        dmg=\DndDice{1d8+3},
-        dmg-type=bludgeoning,
-      ]
-  
-      \DndMonsterAction{Ground Pound}
-      The elemental stomps the ground. Each creature around the elemental within 5 feet radius must make a DC13 dexterity saving throw or fall prone.
-  
-      % Legendary Actions
-      \DndMonsterSection{Legendary Actions}
-      The foo can take 1 legendary action, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The foo regains spent legendary actions at the start of its turn.
-  
-      \begin{DndMonsterLegendaryActions}
-        \DndMonsterLegendaryAction{Shaky Ground}{A 20 feet square becomes difficult terrain until the start of the elemental's next turn.}
-        \DndMonsterLegendaryAction{Rumble}{Each creature within it's lair except the elemental must make a DC 12 dexterity saving throw or gain the prone condition.}
-      \end{DndMonsterLegendaryActions}
-  \end{DndMonster}
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Stone Elemental}
+  \begin{multicols}{2}
+    \DndMonsterType{Large elemental, unaligned}
+
+    % If you want to use commas in the key values, enclose the values in braces.
+    \DndMonsterBasics[
+      armor-class = {16 (Natural Armor)},
+      hit-points  = {81 \DndDice{12d10 + 15}},
+      speed       = {20 ft., burrow 30 ft.},
+    ]
+
+    \DndMonsterAbilityScores[
+      str = 18,
+      dex = 7,
+      con = 17,
+      int = 5,
+      wis = 6,
+      cha = 4,
+    ]
+
+    \DndMonsterDetails[
+      skills = {Stealth +0},
+      senses = {darkvision 60 Ft., tremorsense 60 Ft., passive Perception 8},
+      languages = {---},
+      challenge = 3,
+    ]
+    % Traits
+    \DndMonsterAction{Earth Glide}
+    The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
+
+    \DndMonsterSection{Actions}
+    \DndMonsterAction{Multiattack}
+    The elemental makes two slam attacks.
+
+    \DndMonsterAttack[
+      name=Slam,
+      distance=melee,
+      type=weapon,
+      mod=+4,
+      reach=10,
+      targets=one target,
+      dmg=\DndDice{1d8+3},
+      dmg-type=bludgeoning,
+    ]
+
+    \DndMonsterAction{Ground Pound}
+    The elemental stomps the ground. Each creature around the elemental within 5 feet radius must make a DC13 dexterity saving throw or fall prone.
+
+    % Legendary Actions
+    \DndMonsterSection{Legendary Actions}
+    The foo can take 1 legendary action, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The foo regains spent legendary actions at the start of its turn.
+
+    \begin{DndMonsterLegendaryActions}
+      \DndMonsterLegendaryAction{Shaky Ground}{A 20 feet square becomes difficult terrain until the start of the elemental's next turn.}
+      \DndMonsterLegendaryAction{Rumble}{Each creature within it's lair except the elemental must make a DC 12 dexterity saving throw or gain the prone condition.}
+    \end{DndMonsterLegendaryActions}
+  \end{multicols}
+\end{DndMonster}
